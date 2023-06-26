@@ -63,6 +63,19 @@
    <addaction name="menuEdit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+  </widget>
   <action name="actionNew">
    <property name="icon">
     <iconset resource="Resources.qrc">
@@ -73,6 +86,10 @@
    </property>
   </action>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/imgs/Open.bmp</normaloff>:/imgs/Open.bmp</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
